@@ -1,7 +1,7 @@
 {% set name = "czifile" %}
-{% set version = "2026.4.30" %}
+{% set version = "2026.6.6" %}
 {% set python_min = "3.12" %}
-{% set sha256 = "83c7022dbef06840b8e306b16769f46ad426b348df61019859ce3a33c0f3aedf" %}
+{% set sha256 = "a2a8e4bccb2090c73db72442d6a9de766370b5d346adf3ae3037097fa20a11fa" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=2.0.0
-    - imagecodecs >=2026.3.6
+    - imagecodecs >=2026.6.6
     - tifffile >=2024.8.30
     - xarray >=2024.4.0
     - matplotlib-base >=3.7.0
