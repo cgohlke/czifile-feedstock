@@ -1,14 +1,14 @@
 {% set name = "czifile" %}
-{% set version = "2026.6.12" %}
+{% set version = "2026.8.16" %}
 {% set python_min = "3.12" %}
-{% set sha256 = "8b4ebdf619a14906e4c7c0810fd213ee19321244549da98b94c25cd81f28f36f" %}
+{% set sha256 = "92cbff13a5b136507fabb6edd19b490939e5dc29202fc3b515a75b72a3578a4e" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=2.0.0
-    - imagecodecs >=2026.6.6
+    - imagecodecs >=2026.8.16
     - tifffile >=2024.8.30
     - xarray >=2024.4.0
     - matplotlib-base >=3.7.0
